@@ -32,6 +32,15 @@
         </div>
     </nav>
 
+    <!-- SEARCH BAR (THIS WAS MISSING) -->
+    <div class="search-bar-container" id="searchBar">
+        <div class="search-inner">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search for shoes (e.g. Suede, Boots, Loafers)..." oninput="filterProducts()">
+            <button class="close-search" onclick="toggleSearch(event)"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-text">
