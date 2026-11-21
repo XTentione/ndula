@@ -14,11 +14,11 @@
 <body>
 
     <!-- Navigation -->
-        <nav>
+    <nav>
         <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">SoleVault<span>.</span></a>
         
         <ul class="nav-links" id="navLinks">
-            <li><a href="men.html">Men</a></li>
+            <li><a href="men.html" class="active">Men</a></li>
             <li><a href="women.html">Women</a></li>
             <li><a href="new.html">New Arrivals</a></li>
             <li><a href="sale.html">Sale</a></li>
@@ -27,7 +27,7 @@
         <div class="nav-icons">
             <a href="javascript:void(0)" onclick="toggleSearch(event)"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="javascript:void(0)" onclick="toggleCart(event)"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span></a>
-            <!-- Hamburger Menu Icon (Only shows on mobile) -->
+            <!-- Hamburger Menu Icon -->
             <a href="javascript:void(0)" class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
@@ -41,7 +41,6 @@
             <a href="#shop" class="btn">Shop Men's</a>
         </div>
         <div class="hero-image">
-            <!-- Changed the hero image to a men's shoe -->
             <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/59/809765/1.jpg?5436" alt="Men's Shoes">
         </div>
     </header>
@@ -68,7 +67,7 @@
                 </div>
             </div>
 
-            <!-- Shoe 3 -->
+            <!-- Shoe 2 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/59/809765/1.jpg?5436" alt="AIDAILU">
@@ -81,7 +80,7 @@
                 </div>
             </div>
 
-            <!-- Shoe 5 -->
+            <!-- Shoe 3 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/64/2206213/1.jpg?8373" alt="Banagat">
@@ -94,7 +93,7 @@
                 </div>
             </div>
 
-            <!-- Shoe 7 -->
+            <!-- Shoe 4 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/42/1578023/1.jpg?2442" alt="Suede Loafers">
@@ -107,11 +106,11 @@
                 </div>
             </div>
 
-            <!-- Shoe 8 -->
+            <!-- Shoe 5 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/37/9747823/1.jpg?2228" alt="Motorcycle Boots">
-                    <button class="add-to-cart" onclick="addToCart('Motorcycle Boots', 2680)"><i class="fa-solid fa-plus"></i></button>
+                    <button class="add-to-cart" onclick="addToCart('Motorcycle Boots', 2500)"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="product-info">
                     <h3>GALUIN Men Matte</h3>
@@ -120,11 +119,11 @@
                 </div>
             </div>
 
-            <!-- Shoe 9 -->
+            <!-- Shoe 6 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/17/6987661/1.jpg?1948" alt="AIDAILU">
-                    <button class="add-to-cart" onclick="addToCart('AIDAILU', 2232)"><i class="fa-solid fa-plus"></i></button>
+                    <button class="add-to-cart" onclick="addToCart('AIDAILU', 3000)"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="product-info">
                     <h3>AIDAILU</h3>
@@ -133,7 +132,7 @@
                 </div>
             </div>
 
-        </div> <!-- END OF PRODUCT GRID -->
+        </div>
     </section>
 
     <!-- SLIDE-OUT SHOPPING CART -->
@@ -157,7 +156,8 @@
             <button class="btn checkout-btn" onclick="checkout()">Checkout Now</button>
         </div>
     </div>
-        <!-- FOOTER -->
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer-grid">
             
@@ -190,7 +190,7 @@
 
             <div class="footer-col">
                 <h4>Get In Touch</h4>
-                                <ul class="footer-contact">
+                <ul class="footer-contact">
                     <li>
                         <i class="fa-brands fa-whatsapp"></i> 
                         <a href="https://wa.me/254791188746" target="_blank" style="color: inherit;">+254 791 188 746</a>
@@ -201,19 +201,15 @@
                     </li>
                     <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
                 </ul>
-                                <div class="footer-socials">
-                    <!-- Update the hrefs with your actual profile links -->
+                
+                <div class="footer-socials">
                     <a href="https://instagram.com/xtentione__" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://tiktok.com/@xtentione" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                    
-                    <!-- Fixed the X icon -->
-                   <a href="https://x.com/heinxw" target="_blank" aria-label="X" style="color: #e5e5e5 !important; font-family: Arial, sans-serif; font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">
-    𝕏
-</a>
-                    
+                    <a href="https://x.com/heinxw" target="_blank" aria-label="X" style="color: #e5e5e5 !important; font-family: Arial, sans-serif; font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">𝕏</a>
                 </div>
+            </div>
 
-        </div>
+        </div> <!-- END OF FOOTER GRID -->
 
         <div class="footer-bottom">
             <p>&copy; <span id="year"></span> SoleVault. All rights reserved.</p>
@@ -224,7 +220,6 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -13,12 +13,13 @@
 </head>
 <body>
 
-        <nav>
+    <!-- Navigation -->
+    <nav>
         <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">SoleVault<span>.</span></a>
         
         <ul class="nav-links" id="navLinks">
             <li><a href="men.html">Men</a></li>
-            <li><a href="women.html">Women</a></li>
+            <li><a href="women.html" class="active">Women</a></li>
             <li><a href="new.html">New Arrivals</a></li>
             <li><a href="sale.html">Sale</a></li>
         </ul>
@@ -26,11 +27,12 @@
         <div class="nav-icons">
             <a href="javascript:void(0)" onclick="toggleSearch(event)"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="javascript:void(0)" onclick="toggleCart(event)"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span></a>
-            <!-- Hamburger Menu Icon (Only shows on mobile) -->
+            <!-- Hamburger Menu Icon -->
             <a href="javascript:void(0)" class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-text">
             <span class="badge">Women's Footwear</span>
@@ -43,6 +45,7 @@
         </div>
     </header>
 
+    <!-- Product Grid -->
     <section id="shop" class="products-section">
         <div class="section-header">
             <h2>Women's Collection</h2>
@@ -50,7 +53,8 @@
         </div>
 
         <div class="product-grid">
-            <!-- Shoe 2 -->
+            
+            <!-- Shoe 1 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/01/3525723/1.jpg?2104" alt="Motorcycle Boots">
@@ -63,7 +67,7 @@
                 </div>
             </div>
 
-            <!-- Shoe 4 -->
+            <!-- Shoe 2 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/37/4186523/1.jpg?4332" alt="Banagat">
@@ -76,7 +80,7 @@
                 </div>
             </div>
 
-            <!-- Shoe 6 -->
+            <!-- Shoe 3 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/6899091/1.jpg?2651" alt="Forest Trail">
@@ -89,11 +93,11 @@
                 </div>
             </div>
 
-            <!-- Shoe 10 -->
+            <!-- Shoe 4 -->
             <div class="product-card">
                 <div class="image-box">
-                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/05/4372523/1.jpg?1963" alt="Banagat">
-                    <button class="add-to-cart" onclick="addToCart('Banagat', 3775)"><i class="fa-solid fa-plus"></i></button>
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/05/4372523/1.jpg?1963" alt="Sneaker">
+                    <button class="add-to-cart" onclick="addToCart('Sneaker', 1775)"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="product-info">
                     <h3>Sneaker</h3>
@@ -102,11 +106,11 @@
                 </div>
             </div>
 
-            <!-- Shoe 11 -->
+            <!-- Shoe 5 -->
             <div class="product-card">
                 <div class="image-box">
-                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/93/4255723/1.jpg?5764" alt="Banagat">
-                    <button class="add-to-cart" onclick="addToCart('Banagat', 2500)"><i class="fa-solid fa-plus"></i></button>
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/93/4255723/1.jpg?5764" alt="Chunky-Soled Sneaker">
+                    <button class="add-to-cart" onclick="addToCart('Chunky-Soled Sneaker', 2500)"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="product-info">
                     <h3>Chunky-Soled Sneaker</h3>
@@ -115,11 +119,11 @@
                 </div>
             </div>
 
-            <!-- Shoe 12 -->
+            <!-- Shoe 6 -->
             <div class="product-card">
                 <div class="image-box">
-                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/03/3954523/1.jpg?1040" alt="Forest Trail">
-                    <button class="add-to-cart" onclick="addToCart('Forest Trail', 1500)"><i class="fa-solid fa-plus"></i></button>
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/03/3954523/1.jpg?1040" alt="FGLARPEBIE">
+                    <button class="add-to-cart" onclick="addToCart('FGLARPEBIE', 900)"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="product-info">
                     <h3>FGLARPEBIE</h3>
@@ -127,18 +131,23 @@
                     <span class="price">KSh 900</span>
                 </div>
             </div>
+
         </div>
     </section>
 
+    <!-- SLIDE-OUT SHOPPING CART -->
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart(event)"></div>
+    
     <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
             <h2>Your Cart</h2>
             <button class="close-cart" onclick="toggleCart(event)"><i class="fa-solid fa-xmark"></i></button>
         </div>
+        
         <div class="cart-items" id="cartItems">
             <p class="empty-msg">Your cart is empty. Start shopping!</p>
         </div>
+        
         <div class="cart-footer">
             <div class="total-row">
                 <span>Total:</span>
@@ -148,7 +157,7 @@
         </div>
     </div>
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
         <div class="footer-grid">
             
@@ -181,7 +190,7 @@
 
             <div class="footer-col">
                 <h4>Get In Touch</h4>
-                                <ul class="footer-contact">
+                <ul class="footer-contact">
                     <li>
                         <i class="fa-brands fa-whatsapp"></i> 
                         <a href="https://wa.me/254791188746" target="_blank" style="color: inherit;">+254 791 188 746</a>
@@ -192,19 +201,15 @@
                     </li>
                     <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
                 </ul>
-                                <div class="footer-socials">
-                    <!-- Update the hrefs with your actual profile links -->
+                
+                <div class="footer-socials">
                     <a href="https://instagram.com/xtentione__" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://tiktok.com/@xtentione" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                    
-                    <!-- Fixed the X icon -->
-                   <a href="https://x.com/heinxw" target="_blank" aria-label="X" style="color: #e5e5e5 !important; font-family: Arial, sans-serif; font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">
-    𝕏
-</a>
-                    
+                    <a href="https://x.com/heinxw" target="_blank" aria-label="X" style="color: #e5e5e5 !important; font-family: Arial, sans-serif; font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">𝕏</a>
                 </div>
+            </div>
 
-        </div>
+        </div> <!-- END OF FOOTER GRID -->
 
         <div class="footer-bottom">
             <p>&copy; <span id="year"></span> SoleVault. All rights reserved.</p>
@@ -215,8 +220,6 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    
-
     <script src="script.js"></script>
 </body>
 </html>
