@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection | SoleVault</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <nav>
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">SoleVault<span>.</span></a>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="new.html">New Arrivals</a></li>
+            <li><a href="sale.html">Sale</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="javascript:void(0)" onclick="toggleSearch(event)"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="javascript:void(0)" onclick="toggleCart(event)"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span></a>
+            <!-- Hamburger Menu Icon (Only shows on mobile) -->
+            <a href="javascript:void(0)" class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <span class="badge">Women's Footwear</span>
+            <h1>Unleash Your <br><span class="highlight">Confidence.</span></h1>
+            <p>Discover our stunning collection of women's boots, sneakers, and lifestyle shoes. Crafted for elegance and everyday comfort.</p>
+            <a href="#shop" class="btn">Shop Women's</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/01/3525723/1.jpg?2104" alt="Women's Shoes">
+        </div>
+    </header>
+
+    <section id="shop" class="products-section">
+        <div class="section-header">
+            <h2>Women's Collection</h2>
+            <p>Step out in style with our top picks.</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Shoe 2 -->
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/01/3525723/1.jpg?2104" alt="Motorcycle Boots">
+                    <button class="add-to-cart" onclick="addToCart('Motorcycle Boots', 2680)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Motorcycle Boots</h3>
+                    <p>Lifestyle Collection</p>
+                    <span class="price">KSh 2,680</span>
+                </div>
+            </div>
+
+            <!-- Shoe 4 -->
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/37/4186523/1.jpg?4332" alt="Banagat">
+                    <button class="add-to-cart" onclick="addToCart('Banagat', 3775)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Banagat</h3>
+                    <p>Limited Edition</p>
+                    <span class="price">KSh 3,775</span>
+                </div>
+            </div>
+
+            <!-- Shoe 6 -->
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/6899091/1.jpg?2651" alt="Forest Trail">
+                    <button class="add-to-cart" onclick="addToCart('Forest Trail', 1500)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Forest Trail</h3>
+                    <p>Outdoor Collection</p>
+                    <span class="price">KSh 1,500</span>
+                </div>
+            </div>
+
+            <!-- Shoe 10 -->
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/05/4372523/1.jpg?1963" alt="Banagat">
+                    <button class="add-to-cart" onclick="addToCart('Banagat', 3775)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Sneaker</h3>
+                    <p>Womens Wear</p>
+                    <span class="price">KSh 1,775</span>
+                </div>
+            </div>
+
+            <!-- Shoe 11 -->
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/93/4255723/1.jpg?5764" alt="Banagat">
+                    <button class="add-to-cart" onclick="addToCart('Banagat', 2500)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Chunky-Soled Sneaker</h3>
+                    <p>Womens Wear</p>
+                    <span class="price">KSh 2,500</span>
+                </div>
+            </div>
+
+            <!-- Shoe 12 -->
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/03/3954523/1.jpg?1040" alt="Forest Trail">
+                    <button class="add-to-cart" onclick="addToCart('Forest Trail', 1500)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>FGLARPEBIE</h3>
+                    <p>Womens Wear</p>
+                    <span class="price">KSh 900</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart(event)"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart(event)"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-msg">Your cart is empty. Start shopping!</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total:</span>
+                <span id="cartTotal">KSh 0</span>
+            </div>
+            <button class="btn checkout-btn" onclick="checkout()">Checkout Now</button>
+        </div>
+    </div>
+
+        <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            
+            <div class="footer-brand">
+                <h3>SoleVault<span>.</span></h3>
+                <p>Premium sneakers and streetwear designed for comfort, style, and performance. Step into the future with every pair.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="new.html">New Arrivals</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                                <ul class="footer-contact">
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i> 
+                        <a href="https://wa.me/254791188746" target="_blank" style="color: inherit;">+254 791 188 746</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:lilacflame47@gmail.com" style="color: inherit;">lilacflame47@gmail.com</a>
+                    </li>
+                    <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+                </ul>
+                                <div class="footer-socials">
+                    <!-- Update the hrefs with your actual profile links -->
+                    <a href="https://instagram.com/xtentione__" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@xtentione" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    
+                    <!-- Fixed the X icon -->
+                   <a href="https://x.com/heinxw" target="_blank" aria-label="X" style="color: #e5e5e5 !important; font-family: Arial, sans-serif; font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">
+    𝕏
+</a>
+                    
+                </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> SoleVault. All rights reserved.</p>
+            <p>Made with <i class="fa-solid fa-heart" style="color:#ff4757;"></i> in Kenya</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
