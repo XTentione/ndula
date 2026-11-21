@@ -67,6 +67,11 @@ nav {
     color: #ff4757;
 }
 
+/* Hide hamburger on desktop */
+.menu-toggle {
+    display: none;
+}
+
 /* --- HERO SECTION --- */
 .hero {
     display: flex;
@@ -410,37 +415,6 @@ nav {
     font-weight: 800;
 }
 
-/* --- MOBILE RESPONSIVE --- */
-@media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 120px;
-    }
-    .hero-text, .hero-image {
-        width: 100%;
-    }
-    .hero-text h1 {
-        font-size: 3.5rem;
-    }
-    .hero-text p {
-        margin: 0 auto 30px auto;
-    }
-    .nav-links {
-        display: none;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* --- ACTIVE NAVIGATION LINK --- */
 .nav-links a.active {
     color: #ff4757;
@@ -593,24 +567,6 @@ footer {
     margin: 4px 0;
 }
 
-/* Footer responsive */
-@media (max-width: 900px) {
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-}
-
-@media (max-width: 600px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-    .footer-brand p {
-        max-width: 100%;
-    }
-}
-
 /* --- SEARCH BAR --- */
 .search-bar-container {
     position: fixed;
@@ -676,12 +632,124 @@ footer {
     color: #ff4757;
 }
 
-/* Responsive fix for search bar */
+/* --- MOBILE RESPONSIVE --- */
 @media (max-width: 900px) {
+    /* Show hamburger icon */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Mobile Dropdown Menu */
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        max-height: 0; /* Hidden by default */
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    /* When JS adds 'active' class */
+    .nav-links.active {
+        max-height: 300px; 
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 18px 0;
+        border-bottom: 1px solid #f4f4f4;
+        width: 100%;
+    }
+
+    /* Hide the underline on mobile */
+    .nav-links a.active::after {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+    }
+    .hero-text, .hero-image {
+        width: 100%;
+    }
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+    .hero-text p {
+        margin: 0 auto 30px auto;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
     .search-bar-container.active {
         height: 70px; 
     }
     .search-inner {
         padding: 12px 20px;
+    }
+}
+
+/* --- PHONE SPECIFIC TWEAKS (600px and below) --- */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-icons {
+        gap: 15px;
+        font-size: 1.1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero {
+        padding-top: 100px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .products-section {
+        padding: 60px 5%;
+    }
+
+    .search-bar-container.active {
+        height: 60px;
+        padding: 0 4%;
+    }
+    .search-inner input {
+        font-size: 1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .footer-brand p {
+        max-width: 100%;
     }
 }
